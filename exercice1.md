@@ -2,18 +2,25 @@
 
 - `cfdisk /dev/sdb`
 - Sélectionner dos
-- copie écran cfdisk
+
+![cfdisk](/exo1/cfdisk.png)
+
 - `mkfs.ext4 -L DATA /dev/sdb1`
 - `mkswap /dev/sdb2`
 - `swapon /dev/sdb2`
 - `swapoff /dev/sda5`
-- copie ecran lsblk
-- copie ecran blkid pour label
+
+![cfdisk](/exo1/lsblk.png)
+
+- Le label DATA a bien été attribué à sdb1 :
+![cfdisk](/exo1/blkid.png)
 
 # 1.2 Montage
 - `mkdir /mnt/data`
 - `echo -e "\n\n" >> /etc/fstab`
 - `blkid | grep sdb1 >> /etc/fstab`
 - `blkid | grep sdb2 >> /etc/fstab`
-- copie /etc/fstab
-- copie ecran après redémarrage
+
+![cfdisk](/exo1/etcfstab.png)
+
+![cfdisk](/exo1/reboot.png)
