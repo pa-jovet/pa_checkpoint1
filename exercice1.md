@@ -6,13 +6,16 @@
 ![cfdisk](/exo1/cfdisk.png)
 
 - `mkfs.ext4 -L DATA /dev/sdb1`
-- `mkswap -L SWAP /dev/sdb2`
+- `mkswap /dev/sdb2`
 - `swapon /dev/sdb2`
 - `swapoff /dev/sda5`
 
 ![cfdisk](/exo1/lsblk.png)
 
-- Le label DATA a bien été attribué à sdb1 et le label SWAP à sdb2 (après correction de la ligne de code utilisée sur le screenshot) ; sdb1 est bien en ext4 et sdb2 en swap :
+- Label SWAP manquait à sdb2 :
+  - `swapoff /dev/sdb2`
+  - `mkswap -L SWAP /dev/sdb2`
+  - `swapon /dev/sdb2`
 
 ![cfdisk](/exo1/blkid.png)
 
