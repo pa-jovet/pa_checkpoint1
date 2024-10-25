@@ -8,7 +8,11 @@
 Ajouter `*.pdf` dans le fichier `.gitignore` (à créer au préalable).
 
 # 4.
-
+1. `git checkout main`
+2. `git merge test_valide`
+3. `git add .`
+4. `git commit -m "Fusion test_valide et main"`
+5. `git push origin main`
 
 # 5.
 `echo -e 'Malgré le prix élevé de 100$, il a dit "Bonjour !" au vendeur :\n- "Bonjour est-ce que ce clavier fonctionne bien ?"\n- "Evidemment ! On peut tout écrire avec, que ce soit des pipe | ou bien des backslash \\\ !"\n- "Même des tildes ~ ?"\n- "Evidemment !"'`
