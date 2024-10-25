@@ -12,7 +12,7 @@
 
 ![cfdisk](/exo1/lsblk.png)
 
-- Le label DATA a bien été attribué à sdb1 et le label SWAP à sdb2 ; sdb1 est bien en ext4 et sdb2 en swap :
+- Le label DATA a bien été attribué à sdb1 et le label SWAP à sdb2 (après correction de la ligne de code utilisée sur le screenshot) ; sdb1 est bien en ext4 et sdb2 en swap :
 
 ![cfdisk](/exo1/blkid.png)
 
