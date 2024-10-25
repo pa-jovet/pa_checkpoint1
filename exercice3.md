@@ -29,6 +29,7 @@ Ajouter `*.pdf` dans le fichier `.gitignore` (à créer au préalable).
 | ls | Get-ChildItem |
 
 # 9.
-
+Le *payload* est la donnée que l'on souhaite transmettre au destinataire.
 
 # 10.
+Le CIDR est beaucoup plus maniable et pratique à utiliser. Les classes limitaient trop le découpage des réseaux.
